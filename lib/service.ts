@@ -68,7 +68,7 @@ const q = {
   sorts: [
     {
       property: '公開日時',
-      direction: 'descending',
+      direction: 'ascending',
     },
   ],
   limit: 10,

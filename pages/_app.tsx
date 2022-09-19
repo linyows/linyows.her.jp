@@ -5,9 +5,8 @@ import type { AppProps } from 'next/app'
 import 'notionate/dist/styles/notionate.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const title = 'Services'
+  const title = 'Pepabo Services'
   const icon = '️✍️'
-  const desc = 'ペパボのサービスです。'
   return (
     <div className="container">
       <Head>
@@ -17,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <header className="header">
         <h1> <span>{icon}</span> <span><Link href="/">{title}</Link></span> </h1>
-        <p>{desc}</p>
+        <p>これは <a href="https://tech.pepabo.com/">NotionをDaaSにして「ロリポップ！」「ヘテムル」のサイトをもっと安全にしよう</a> のサンプルサイトです。</p>
       </header>
 
       <section>

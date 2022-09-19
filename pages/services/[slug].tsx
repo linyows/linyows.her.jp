@@ -55,14 +55,18 @@ export const getStaticProps: GetStaticProps<Props, Params, PreviewData> = async 
 const Service: NextPage<Props> = ({ service, blocks }) => {
   return (
     <>
-      <img className="cover" src={service?.cover} width="100%" />
-      <h2> {service?.title} </h2>
-      <p className="meta">
-        作成日： <span>{service?.date}</span>, 
-        タグ： {service?.tags.map((tag, i) => (
-          <span key={`${i}`}>{tag}</span>
-        ))}
-      </p>
+      <header className="service-header">
+        <div>
+            <h2 className="name">{service?.title}</h2>
+            <p className="meta">
+                作成日： <span>{service?.date}</span>, 
+                タグ： {service?.tags.map((tag, i) => (
+                <span key={`${i}`}>{tag}</span>
+                ))}
+            </p>
+        </div>
+        <img className="cover" src={service?.cover} width="250px" />
+      </header>
       <Blocks blocks={blocks!} />
     </>
   )
