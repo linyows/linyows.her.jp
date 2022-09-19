@@ -82,7 +82,6 @@ export const getService = async (slug: string) => {
   const svc = await getServices()
   return svc.results.find(v => {
     const p = v as unknown as DBPage
-    console.log(p)
     return p.properties.Slug.rich_text.map(vv => vv.plain_text).join(',') === slug
   })
 }
