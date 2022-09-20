@@ -35,13 +35,15 @@ a {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 2.2rem 1fr;
-  gap: 1rem;
+  grid-template-columns: 2.5rem 1fr;
+  gap: .5rem;
+  overflow: hidden;
 }
 
 .header p {
   font-size: .9rem;
   opacity: 0.5;
+  line-height: 1.5;
 }
 .header p a {
   opacity: 1;
@@ -96,4 +98,33 @@ section .notionate-blocks-bookmark {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+  }
+  .header h1 span {
+    margin-right: 10px;
+  }
+  .service-header {
+    display: block;
+  }
+  .name {
+    margin: 0;
+    padding: 10px 0 5px;
+  }
+  .meta {
+    margin: 0;
+  }
+  .cover {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
+  section .notionate-blocks-text-h2 {
+    font-size: 1.2rem;
+  }
 }
