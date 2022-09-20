@@ -100,6 +100,15 @@ section .notionate-blocks-bookmark {
   margin-right: auto;
 }
 
+@media (prefers-color-scheme: dark) {
+  section .notionate-gallery-preview img {
+    background-color: #fff;
+  }
+  .cover {
+    background-color: #fff;
+  }
+}
+
 @media (max-width: 480px) {
   .header h1 {
     font-size: 1.5rem;
