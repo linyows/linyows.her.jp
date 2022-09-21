@@ -7,8 +7,8 @@ import 'notionate/dist/styles/notionate.css'
 function MyApp({ Component, pageProps }: AppProps) {
   const title = 'Pepabo Services'
   const icon = '️✍️'
-  const blogUrl = 'https://tech.pepabo.com/2022/09/21/build-sites-on-lolipop-more-secure-with-daas-notion/'
-  const blogTitle = 'NotionをDaaSにして「ロリポップ！」「ヘテムル」のサイトをもっと安全にしよう'
+  const blogUrl = 'https://tech.pepabo.com/2022/09/21/build-sites-on-lolipop-more-secure-with-dbaas-notion/'
+  const blogTitle = 'NotionをDBaaSにして「ロリポップ！」「ヘテムル」のサイトをもっと安全にしよう'
   return (
     <div className="container">
       <Head>
